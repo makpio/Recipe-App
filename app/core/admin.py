@@ -8,7 +8,6 @@ from core import models
 class UserAdmin(BaseUserAdmin):
     ordering = ['id']
     list_display = ['email', 'name']
-    #list_filter = ('is_staff', 'is_superuser')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
         (_('Personal Info'), {'fields': ('name',)}),
@@ -24,5 +23,6 @@ class UserAdmin(BaseUserAdmin):
             'fields': ('email', 'password1', 'password2')
         }),
     )
+
 
 admin.site.register(models.User, UserAdmin)
