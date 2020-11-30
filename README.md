@@ -5,6 +5,6 @@
 ### build guide
 🐋 Using docker-compose:
 
-docker-compose build
-docker-compose up
-docker-compose run app sh -c "python manage.py runserver"
+1. docker-compose build
+2. docker-compose up
+3. docker-compose run app sh -c "python manage.py runserver"
